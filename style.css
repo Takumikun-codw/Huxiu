@@ -1,0 +1,244 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.clearfix:before,.clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  *zoom: 1;
+}  
+li {
+  list-style: none;
+  border-radius: 5px;
+}
+a {
+  text-decoration: none;
+}
+.w {
+  width: 1000px;
+  margin: auto;
+}
+.more {
+  margin-right: 5px;
+  font-size: 11px;
+} /*查看更多部分*/
+.triangle {
+  float: right;
+  width: 0;
+  height: 0;
+  margin-top: 16px;
+  margin-left: 5px;
+  border-top: 3.5px solid transparent;
+  border-left: 7px solid #ff6060;
+  border-bottom: 3.5px solid transparent;
+} /*查看更多后的小三角*/
+.fix {
+  height: 100px;
+} /*用大盒子放两个固定定位元素，仍占据原来的位置*/
+.subtitle {
+  position: fixed;
+  top: 0px;
+  height: 30px;
+  width: 100%;
+  background-color: #27282d;
+}
+.subtitle ul li {
+  float: left;
+  margin: 0 20px;
+}
+.subtitle ul li a {
+  display: block;
+  padding: 0 10px;
+  line-height: 30px;
+  font-size: 13px;
+  color: white;
+}
+.subtitle .leftest {
+  margin-left: 300px;
+}
+.subtitle .rightest {
+  margin-left: 300px;
+}
+.nav {
+  position: fixed;
+  top: 30px;
+  left: 266px;
+  height: 70px;
+  background-color: #fff;
+}
+.nav img {
+  float: left;
+  height: 40px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-right: 40px;
+}
+.nav ul li {
+  float: left;
+  margin: 0px 30px;
+}
+.nav ul li a {
+  display: block;
+  height: 80px;
+  padding: 0 10px;
+  line-height: 80px;
+  font-size: 18px;
+  color: #27282d;
+}
+.nav .post {
+   float: right;
+   width: 80px;
+   height: 30px;
+   margin: 25px 15px;
+   text-align: center;
+   line-height: 30px;
+   border: 1px solid #27282d;
+   border-radius: 15px;
+   font-size: 14px;
+ }
+.nav .search {
+  float: right;
+}
+.banner {
+  float: left;
+  height: 396px;
+  width: 704px;
+}
+.banner img {
+  height: 396px;
+  width: 704px;
+  border-radius: 5px;
+}
+
+.vertical {
+  width: 270px;
+  height: 650px;
+  margin-left: 20px;
+  float: right;
+  border-top: 5px solid #27282d;
+  border-bottom: 5px solid #27282d;
+}
+.vertical .banner {
+  height: 40px;
+  width: 100%;
+  line-height: 40px;
+}
+.vertical .banner .tfh {
+  float: left;
+  line-height: 40px;
+  font-size: 17px;
+}
+.vertical .banner .more {
+  float: right;
+}
+
+.articles {
+  float: left;
+  width: 704px;
+  height:260px;
+  margin-top: 20px;
+  border-bottom: 5px solid #27282d;
+}
+.articles img {
+  float: left;
+  width: 330px;
+  border-radius: 5px;
+}
+.articles .content {
+  float: right;
+  width: 360px;
+  border-top: 5px solid #27282d;
+}
+.articles .content .banner{
+  height: 40px;
+  width: 100%;
+  line-height: 40px;
+}
+.articles .content .banner h4 {
+  display: inline-block;
+  font-weight: normal;
+  font-size: 18px;
+}
+.articles .content .banner .more {
+  float: right;
+}
+
+.newest {
+  float: left;
+  width: 704px;
+  height: 950px;
+}
+.newest .banner {
+  height: 40px;
+  width: 704px;
+  line-height: 40px;
+}
+.newest .banner h4 {
+  display: inline-block;
+  font-weight: normal;
+  font-size: 18px;
+}
+.newest .banner .more {
+  float: right;
+}
+.newest ul {
+  width: 720px;
+}
+.newest ul li {
+  float: left;
+  height: 270px;
+  width: 225px;
+  margin-right: 15px; /*若会掉下来，给父盒子增宽度*/
+  margin-bottom: 15px;
+  background-color: #f4f4f4;
+}
+.newest .more1 {
+  float: left;
+}
+.newest .more1 a {
+  float: left;
+  font-size: 11px;
+}
+.newest .more1 .triangle {
+  float: left;
+  border-left: 3.5px solid transparent;
+  border-top: 7px solid #ff6060;
+  border-right: 3.5px solid transparent; 
+}
+
+.vip {
+  float: left;
+  width: 1000px;
+  height: 350px;
+  border-top: 5px solid #d2bb99;
+  border-bottom: 5px solid #27282d;
+  
+}
+.vip .banner {
+  height: 40px;
+  width: 1000px;
+  line-height: 40px;
+}
+.vip ul {
+  width: 1000px;
+}
+.vip ul li {
+  float: left;
+  height: 270px;
+  width: 235px;
+  margin-right: 15px; /*若会掉下来，给父盒子增宽度*/
+  margin-bottom: 15px;
+  background-color: #cebda2;
+}
+.vip .more a {
+  float: left;
+}
+.vip .triangle {
+  margin-top: 5px;
+  float: left;
+}
