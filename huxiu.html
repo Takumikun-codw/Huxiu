@@ -38,8 +38,13 @@
   </div>
   <div class="nav w">
     <img src="images/logo1.png" alt="">
-    <ul>
-      <li><a href="#">资讯</a></li>
+    <ul class="pop">
+      <li>
+        <a href="#">资讯</a>
+        <div class="popbox">
+          <span>最新</span><span>频道</span><span>号外</span><span>时间线</span><span>文集</span>
+        </div>
+      </li>
       <li><a href="#">视频</a></li>
       <li><a href="#">24小时</a></li>
       <li><a href="#">专栏更新</a></li>
@@ -47,16 +52,41 @@
     <div class="user"><a href="#"></a></div>
     <div class="search"><a href="#"></a></div>  
     <div class="post">投稿</div>
-    <div class="user"></div>
+     
   </div>
   </div>
+  <!-- <script>
+    var pop = document.querySelector('.pop');
+    var lis = pop.children;
+    var popbox = document.querySelector('.popbox');
+    lis[0].onmouseover = function() {
+      this.children[1].style.display = 'block';
+    }
+    lis[0].onmouseout = function() {
+      this.children[1].style.display = 'none';
+    }
+  </script> -->
 <!-- 顶部固定模块结束 -->
 <!-- 主要内容模块开始 -->
   <div class="w">
     <!-- 大图片 -->
-    <div class="bigbanner">
-      <img src="images/banner1.jpg" alt="">
-    </div>
+    <!-- <div class="container"> -->
+      <div class="bigbanner">
+        <a href="#" class="arrow-l">&lt;</a>
+        <a href="#" class="arrow-r">&gt;</a>
+        <ul>
+          <li><a href="javascript:;"><img src="images/banner1.jpg" alt=""></a></li>
+          <li><a href="javascript:;"><img src="images/banner2.jpg" alt=""></a></li>
+          <li><a href="javascript:;"><img src="images/banner3.jpg" alt=""></a></li>
+          <li><a href="javascript:;"><img src="images/banner4.jpg" alt=""></a></li>
+        </ul>
+        <ol class="circle">
+        </ol>
+      </div>
+      <script src="js/animate.js"></script>
+      <script src="js/index.js"></script>
+    <!-- </div> -->
+    
     <!-- 垂直栏 -->
     <div class="vertical">
       <div class="banner">
@@ -299,7 +329,11 @@
         妙投：新经济·新钱·新价值。
       </div>
       <div class="icons">
-        <span></span> <span></span> <span></span> 
+        <ul class="circle">
+          <li><a href="#"><span></span></a></li>
+          <li><a href="#"><span></span></a></li>
+          <li><a href="#"><span></span></a></li>
+      </ul>
         <em>关于我们</em><em>加入我们</em><em>合作伙伴</em><em>防网络诈骗专题</em><em>RSS订阅</em>
       </div>
     </div>
