@@ -14,7 +14,7 @@
 }  
 li {
   list-style: none;
-  border-radius: 5px;
+  /* border-radius: 5px; */
 }
 a {
   text-decoration: none;
@@ -195,6 +195,7 @@ span {
   width: 704px;
   margin-top: -40px;
   overflow: hidden;
+  border-radius: 5px;
   /* animation: switch 12s ease-out infinite; */
 }
 .bigbanner .arrow-l, .bigbanner .arrow-r{
@@ -208,14 +209,13 @@ span {
   font-weight: bolder;
 }
 .bigbanner .arrow-r {
-  left: 100%;
-  margin-left: -22px;
+  right: 0;
 }
 .bigbanner ul {
   position: absolute;
   top: 0;
   left: 0;
-  width: 2850px;
+  width: 600%;
 }
 .bigbanner ul li {
   float: left;
@@ -223,7 +223,7 @@ span {
 .bigbanner img {
   height: 396px;
   width: 704px;
-  border-radius: 5px;
+
 }
 .bigbanner .circle {
   position: absolute;
@@ -243,7 +243,7 @@ span {
 .bigbanner .circle .current {
   background-color: #fff;
 }
-@keyframes switch {
+/* @keyframes switch {
 	0%, 15% {
 		margin-left: 0;
 	}
@@ -259,7 +259,7 @@ span {
   90%, 100% {
     margin-left: 0;
   }
-}
+} */
 
 .vertical {
   width: 270px;
@@ -269,6 +269,7 @@ span {
   float: right;
   border-top: 5px solid #27282d;
   border-bottom: 5px solid #27282d;
+  overflow: hidden;
 }
 .vertical .banner .tfh {
   float: left;
@@ -277,6 +278,22 @@ span {
 }
 .vertical .banner .more {
   float: right;
+}
+.vertical ul li {
+  position: relative;
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
+  width: 100%;
+  height: 113px;
+  margin: 10px 5px;
+  border-bottom: 1px solid #efefef;
+  color: #999999;
+  font-size: 14px;
+  z-index: -1;
+  cursor: pointer;
+  overflow: hidden;
 }
 
 .articles {
@@ -401,6 +418,7 @@ span {
   margin-right: 15px; /*若会掉下来，给父盒子增宽度*/
   margin-bottom: 15px;
   background-color: #f4f4f4;
+  border-radius: 5px;
   overflow: hidden;
 }
 .newest ul li img {
@@ -449,6 +467,7 @@ span {
   width: 238.5px;
   margin-right: 15px; /*若会掉下来，给父盒子增宽度*/
   margin-bottom: 15px;
+  border-radius: 5px;
   background-color: #cebda2;
   overflow: hidden;
 }
