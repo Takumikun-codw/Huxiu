@@ -8,8 +8,31 @@
   <link rel="stylesheet" href="font.css">
   <title>Document</title>
 </head>
+
 <body>
+<!-- 弹出注册模块 -->
+  <div id="popLayer"></div>
+  <div id="popBlock">
+    <div class="close">
+      <a href="javascript:;">×</a>
+      <div class="content">
+          <p> 用户名：</p>
+       <input type="text" name="user_name" id="user_name" placeholder="请输入用户名" />
+       <br />
+       <p> 密码：</p>
+       <input type="password" name="user_password" id="user_password" value="" placeholder="请输入密码" />
+       <br>
+       <button type="button" id="login">登录</button>
+       <button type="button" id="register">注册</button>
+       <br />
+       <p id="login_sucss"></p>
+         </div>
+      </div>
+    </div>
+    
+  </div>
 <!-- 顶部固定不动模块开始 -->
+
   <div class="fix">
     <div class="subtitle">     
     <ul>
@@ -72,8 +95,8 @@
     <!-- 大图片 -->
     <!-- <div class="container"> -->
       <div class="bigbanner">
-        <a href="#" class="arrow-l">&lt;</a>
-        <a href="#" class="arrow-r">&gt;</a>
+        <a href="javascript:;" class="arrow-l">&lt;</a>
+        <a href="javascript:;" class="arrow-r">&gt;</a>
         <ul>
           <li><a href="javascript:;"><img src="images/banner1.jpg" alt=""></a></li>
           <li><a href="javascript:;"><img src="images/banner2.jpg" alt=""></a></li>
@@ -88,6 +111,7 @@
     <!-- </div> -->
     
     <!-- 垂直栏 -->
+
     <div class="vertical">
       <div class="banner">
         <div class="tfh">24小时</div>
@@ -95,27 +119,30 @@
           <div class="triangle"></div>
         </div>
       </div>
-      <ul>
-        <li>抗议爆发！韩国民众来到日本驻首尔大使馆前，反对日本将废水排放入海决定。<br><br>
-          日本政府4月13日召开内阁会议正式决定，福岛核电站核废水经过滤并稀释后将排入大海。
-          据韩联社报道，当天韩国民间团体来到大使馆前，要求日本撤回将福岛核电站污水排放入海的决定
-          </li>
-        <li>抗议爆发！韩国民众来到日本驻首尔大使馆前，反对日本将废水排放入海决定。<br><br>
-          日本政府4月13日召开内阁会议正式决定，福岛核电站核废水经过滤并稀释后将排入大海。
-          据韩联社报道，当天韩国民间团体来到大使馆前，要求日本撤回将福岛核电站污水排放入海的决定</li>
-        <li>抗议爆发！韩国民众来到日本驻首尔大使馆前，反对日本将废水排放入海决定。<br><br>
-          日本政府4月13日召开内阁会议正式决定，福岛核电站核废水经过滤并稀释后将排入大海。
-          据韩联社报道，当天韩国民间团体来到大使馆前，要求日本撤回将福岛核电站污水排放入海的决定</li>
-        <li>抗议爆发！韩国民众来到日本驻首尔大使馆前，反对日本将废水排放入海决定。<br><br>
-          日本政府4月13日召开内阁会议正式决定，福岛核电站核废水经过滤并稀释后将排入大海。
-          据韩联社报道，当天韩国民间团体来到大使馆前，要求日本撤回将福岛核电站污水排放入海的决定</li>
-        <li>抗议爆发！韩国民众来到日本驻首尔大使馆前，反对日本将废水排放入海决定。<br><br>
-          日本政府4月13日召开内阁会议正式决定，福岛核电站核废水经过滤并稀释后将排入大海。
-          据韩联社报道，当天韩国民间团体来到大使馆前，要求日本撤回将福岛核电站污水排放入海的决定</li>
-        <li></li>
-        <li></li>
-        <li></li>
-      </ul>
+      <div id="box">
+        <ul id="con1" onMouseOut="Up()" onMouseOver="Stop()">
+          <li><a href="#">华春莹连发三推反问日本核废水排放决定。<br><br>
+            4月13日，日本政府决定以海洋排放方式处置福岛核电站事故核废水。对此，中国外交部发言人华春莹连发三推对日方这一决定提出质问，“这是一个负责任的国家会做的事吗？”</a> </li>
+          <li><a href="#">华春莹连发三推反问日本核废水排放决定。<br><br>
+            4月13日，日本政府决定以海洋排放方式处置福岛核电站事故核废水。对此，中国外交部发言人华春莹连发三推对日方这一决定提出质问，“这是一个负责任的国家会做的事吗？”</a> </li>
+          <li><a href="#">华春莹连发三推反问日本核废水排放决定。<br><br>
+            4月13日，日本政府决定以海洋排放方式处置福岛核电站事故核废水。对此，中国外交部发言人华春莹连发三推对日方这一决定提出质问，“这是一个负责任的国家会做的事吗？”</a> </li>
+          <li><a href="#">华春莹连发三推反问日本核废水排放决定。<br><br>
+            4月13日，日本政府决定以海洋排放方式处置福岛核电站事故核废水。对此，中国外交部发言人华春莹连发三推对日方这一决定提出质问，“这是一个负责任的国家会做的事吗？”</a> </li>
+          <li><a href="#">骄傲！女足比赛现场中国球迷高唱国歌。<br><br>
+            4月13日，中国女足经过120分钟鏖战，最终战胜韩国挺进东京奥运会。在比赛中，看台上的球迷高唱国歌、《歌唱祖国》等为女足加油。</a> </li>
+          <li><a href="#">骄傲！女足比赛现场中国球迷高唱国歌。<br><br>
+            4月13日，中国女足经过120分钟鏖战，最终战胜韩国挺进东京奥运会。在比赛中，看台上的球迷高唱国歌、《歌唱祖国》等为女足加油。</a> </li>
+          <li><a href="#">骄傲！女足比赛现场中国球迷高唱国歌。<br><br>
+            4月13日，中国女足经过120分钟鏖战，最终战胜韩国挺进东京奥运会。在比赛中，看台上的球迷高唱国歌、《歌唱祖国》等为女足加油。</a> </li>
+          <li><a href="#">骄傲！女足比赛现场中国球迷高唱国歌。<br><br>
+            4月13日，中国女足经过120分钟鏖战，最终战胜韩国挺进东京奥运会。在比赛中，看台上的球迷高唱国歌、《歌唱祖国》等为女足加油。</a> </li>
+          <li><a href="#">骄傲！女足比赛现场中国球迷高唱国歌。<br><br>
+            4月13日，中国女足经过120分钟鏖战，最终战胜韩国挺进东京奥运会。在比赛中，看台上的球迷高唱国歌、《歌唱祖国》等为女足加油。</a> </li>
+        </ul>
+        <ul id="con2"></ul>
+      </div>
+
     </div>
     <!-- 文集栏 -->
     <div class="articles">
@@ -361,4 +388,53 @@
     
   </div>
 </body>
+<script type="text/javascript">
+  var box=document.getElementById("box");
+  var con1=document.getElementById("con1");
+  var con2=document.getElementById("con2");
+  var s=con1.querySelector('a');
+  var speed=40;
+  con2.innerHTML=con1.innerHTML;
+  function ScrollUp(){
+    if(box.scrollTop>=con1.scrollHeight){
+      box.scrollTop=0;
+    }else
+      box.scrollTop++;
+  }
+  var i=setInterval("ScrollUp()",speed);
+  function Stop(){
+    clearInterval(i);
+  }
+  function Up(){
+    i=setInterval("ScrollUp()",speed);
+  }
+
+  var login_btn = document.getElementById("login");
+	var register_btn = document.getElementById("register");
+		//登陆按钮
+	  login_btn.addEventListener("click",function(){
+			var user_name = document.getElementById("user_name").value;
+			var user_password = document.getElementById("user_password").value;
+			var user_nameArr = new Array(localStorage.length);
+			for(i=0;i<localStorage.length;i++){
+				user_nameArr[i] = localStorage.key(i);
+			}
+			if(user_nameArr.includes(user_name)){
+				var store_password = localStorage.getItem(user_name);
+				 if(user_password == store_password){
+					 confirm("登陆成功，是否前往");  
+					 window.location.href = "huxiu.html"
+					 
+				 } else{
+					 document.getElementById("login_sucss").innerHTML = "密码错误！";
+				 }
+			}
+			else{
+				document.getElementById("login_sucss").innerHTML = "用户名不存在!";
+			}
+		})
+		register_btn.addEventListener("click",function(){
+			window.location.href = 'register.html';
+		})
+</script>
 </html>
