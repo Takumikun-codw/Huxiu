@@ -10,6 +10,7 @@ window.addEventListener('load', function() {
   var focusWidth = focus.offsetWidth;
   var n = 0;
   var circle = 0;
+    
   user.addEventListener('click', function() {
     popLayer.style.display = 'block';
     popBlock.style.display = 'block';

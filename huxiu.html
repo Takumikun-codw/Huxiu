@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="font.css">
   <title>Document</title>
@@ -59,7 +59,7 @@
       </li>
     </ul>
   </div>
-  <div class="nav w">
+  <div class="nav">
     <img src="images/logo1.png" alt="">
     <ul class="pop">
       <li>
@@ -411,7 +411,6 @@
 
   var login_btn = document.getElementById("login");
 	var register_btn = document.getElementById("register");
-		//登陆按钮
 	  login_btn.addEventListener("click",function(){
 			var user_name = document.getElementById("user_name").value;
 			var user_password = document.getElementById("user_password").value;
@@ -436,5 +435,6 @@
 		register_btn.addEventListener("click",function(){
 			window.location.href = 'register.html';
 		})
+
 </script>
 </html>
